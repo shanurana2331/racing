@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sky{
+background-image: url(sky.jpg);
+height: 100vh; 
+background-size: cover;
+background-position: center;
+}
+
+.ground{
+    background-image: url(road-asphalt-texture-straight-track-for-race-vector-36032120.jpg);
+    position: fixed;
+    background-position: bottom;
+    background-size:initial;
+    bottom: 0px;
+    height: 33vh;
+    width: 100%; 
+    background-repeat: repeat-x;
+    zoom: 90%;
+}
+
+.car{
+    background-image: url(car.png);
+    position: fixed;
+    background-position: left top;
+    background-size: 350px;
+    left: 100px;
+    height:100vh;
+    width: 100vh;
+    background-repeat: no-repeat;
+}
+
+#back{
+    background-image: url(backwheel2.png);
+    border-radius: 50%;
+    position: relative;
+    align-items: center;
+    background-size: 208px;
+    bottom: 17px;
+    left: -4px;
+    height: 156px;
+    width: 210px;
+    background-repeat: no-repeat;
+    animation: wheelrotation linear .4s infinite;
+}
+#front{
+    background-image: url(frontwheel2.png);
+    border-radius: 50%;
+    align-items: center;
+    position: relative;
+    background-size: 207px;
+    bottom: 175px;
+    left: 165px;
+    height: 160px;
+    width: 218px;
+    background-repeat: no-repeat;
+    animation: wheelrotation linear .4s infinite;
+}
+
+@keyframes wheelrotation {
+    100%{
+        transform: rotateZ(360deg);
+    }
+    
+}
+
+.trees{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    bottom: 112px;
+    /* left: 71px; */
+}
+
+#tree1{
+    background-image: url(tree1.png);
+    left: 71px;
+}
+#tree2{
+    background-image: url(tree2.png);
+    left: 500px;
+}
+  
