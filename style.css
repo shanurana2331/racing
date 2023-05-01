@@ -14,19 +14,23 @@ background-position: center;
     background-image: url(road-asphalt-texture-straight-track-for-race-vector-36032120.jpg);
     position: fixed;
     background-position: bottom;
-    background-size:initial;
+    background-size: 500px;
     bottom: 0px;
-    height: 33vh;
-    width: 100%; 
+    max-height: 28.5vh;
+    min-height: 28.5vh;
+    height: 300px;
+    width: 900%; 
     background-repeat: repeat-x;
     zoom: 90%;
+    animation: trackmove  linear 9s infinite;
 }
 
 .car{
     background-image: url(car.png);
     position: fixed;
-    background-position: left top;
+    background-position: left bottom;
     background-size: 350px;
+    bottom: 114px;
     left: 100px;
     height:100vh;
     width: 100vh;
@@ -36,10 +40,10 @@ background-position: center;
 #back{
     background-image: url(backwheel2.png);
     border-radius: 50%;
-    position: relative;
+    position: absolute;
     align-items: center;
     background-size: 208px;
-    bottom: 17px;
+    bottom: -34px;
     left: -4px;
     height: 156px;
     width: 210px;
@@ -50,12 +54,12 @@ background-position: center;
     background-image: url(frontwheel2.png);
     border-radius: 50%;
     align-items: center;
-    position: relative;
+    position: absolute;
     background-size: 207px;
-    bottom: 175px;
-    left: 165px;
-    height: 160px;
-    width: 218px;
+    bottom: -39px;
+    left: 167px;
+    height: 161px;
+    width: 214px;
     background-repeat: no-repeat;
     animation: wheelrotation linear .4s infinite;
 }
@@ -67,22 +71,33 @@ background-position: center;
     
 }
 
+@keyframes trackmove {
+    100%{
+        transform: translateX(-500vw);
+    }
+}
+
 .trees{
     height: 500px;
-    width: 500px;
+    width: 9000%;
+    padding-left: 100px;
     position: relative;
     background-size: 100px;
-    background-repeat: no-repeat;
-    bottom: 112px;
-    /* left: 71px; */
+    bottom: 90px;
+    background-repeat: repeat-x;
+
 }
 
 #tree1{
     background-image: url(tree1.png);
-    left: 71px;
+    left: 0px;
+    z-index: 1;
 }
+
 #tree2{
     background-image: url(tree2.png);
-    left: 500px;
+    z-index: 0;
+    left: 40px;
+    top: -583px;
 }
   
