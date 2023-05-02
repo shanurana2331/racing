@@ -3,9 +3,6 @@
     padding: 0;
 }
 
-.body{
-    overflow: hidden; }
-
 .sky{
 background-image: url(sky.jpg);
 height: 100vh; 
@@ -106,8 +103,9 @@ background-position: center;
   
 .clouds{
     background-image: url(clouds.png);
-    height: 65vh;
-    width: 700%;
+    position: fixed;
+    height: 60vh;
+    width: 800%;
     background-repeat: repeat-x;
     animation: trackmove linear 450s infinite;
 }
