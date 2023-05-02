@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+.body{
+    overflow: hidden; }
+
 .sky{
 background-image: url(sky.jpg);
 height: 100vh; 
