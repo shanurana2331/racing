@@ -104,7 +104,7 @@ background-position: center;
 .clouds{
     background-image: url(clouds.png);
     position: fixed;
-    height: 60vh;
+    height: 70vh;
     width: 800%;
     background-repeat: repeat-x;
     animation: trackmove linear 450s infinite;
